@@ -4,6 +4,7 @@ import { games } from "@/data/games";
 import Marquee from "react-fast-marquee";
 import Link from "next/link";
 import Image from "next/image";
+import GameCard from "@/components/GameCard";
 
 function formatCategory(name: string) {
     // Turn camelCase / PascalCase into words and trim
@@ -91,6 +92,20 @@ export default function Home() {
                     </section>
                 ))}
             </div>
+
+            {/* Featured games (30) - match category page layout */}
+            <section className="mt-8">
+                <div className="flex items-center justify-between mb-4">
+                    <h2 className="text-xl sm:text-2xl font-semibold">Featured games</h2>
+                    <p className="text-sm text-gray-400 hidden sm:block">A curated list of 30 games — responsive for every screen.</p>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" aria-label="Featured games grid">
+                    {games.slice(0, 30).map((game) => (
+                        <GameCard key={game.id} game={game} />
+                    ))}
+                </div>
+            </section>
 
             {/* About / Introduction section (expanded) */}
             <section className="mt-12 bg-white/5 rounded-lg p-6 lg:p-12">
