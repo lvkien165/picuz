@@ -95,9 +95,8 @@ export default function Home() {
 
             {/* Featured games (30) - match category page layout */}
             <section className="mt-8">
-                <div className="flex items-center justify-between mb-4">
-                    <h2 className="text-xl sm:text-2xl font-semibold">Featured games</h2>
-                    <p className="text-sm text-gray-400 hidden sm:block">A curated list of 30 games — responsive for every screen.</p>
+                <div className="flex items-center justify-center mb-4">
+                    <h2 className="text-2xl sm:text-4xl font-bold">Featured games</h2>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" aria-label="Featured games grid">
