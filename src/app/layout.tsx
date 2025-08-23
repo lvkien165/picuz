@@ -24,6 +24,10 @@ export default function RootLayout({
                     name="google-adsense-account"
                     content="ca-pub-6950831911955271"
                 ></meta>
+                <meta
+                    name="google-adsense-account"
+                    content="ca-pub-7256849490141958"
+                ></meta>
             </head>
             <body>
                 <div className="flex flex-col min-h-screen">
